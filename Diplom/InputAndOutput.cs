@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace Diplom
 {
-    class InputAndOutput
+    internal class InputAndOutput
     {
-        static public void ShowQuestion(QuestionPlusAnswers k)
+        public static string PathToFile = "C:\\Users\\Mega\\Documents\\Диплом УЦИТ\\Diplom\\Application_for_testing.git\\Diplom\\Questions.txt";
+        public static void ShowQuestion(QuestionPlusAnswers k)
         {
             Console.WriteLine(k.Question.TextOfQuestion);
             foreach (var answer in k.ListOfAnswers)
@@ -19,20 +20,29 @@ namespace Diplom
 
         }
 
-        static public void AddQuestionFromFile(List<QuestionPlusAnswers> listOfQuestion)
+        public static void AddQuestionFromFile(List<QuestionPlusAnswers> listOfQuestion)
         {
-            FileStream file = new FileStream("C: \\Users\\Mega\\Documents\\Диплом УЦИТ\\Questions.txt", FileMode.Open);
-            StreamReader reader = new StreamReader(file);
-            while (!reader.EndOfStream)
-                { 
-                    listOfQuestion.Add(new QuestionPlusAnswers(reader.ReadLine(),reader.ReadLine(),reader.ReadLine(),reader.ReadLine(),reader.ReadLine()));
-                }                
+            using (var file = new FileStream(PathToFile, FileMode.Open))
+            {
+               var reader = new StreamReader(file);
+               while (!reader.EndOfStream)
+               {
+                   var question = new Question(reader.ReadLine());
+                   var correctAnswer = new CorrectAnswer(reader.ReadLine());
+                   var falseAnswerOne = new FalseAnswer(reader.ReadLine());
+                   var falseAnswerSecond = new FalseAnswer(reader.ReadLine());
+                   var falseAnswerThird = new FalseAnswer(reader.ReadLine());
+                    var questionPlusAnswers = new QuestionPlusAnswers(question, correctAnswer, falseAnswerOne, falseAnswerSecond, falseAnswerThird);
+                   listOfQuestion.Add(questionPlusAnswers);
+               } 
+            }
         }
-        static public void ShowTest(Test test)
+
+        public static void ShowTest(Test test)
         {
             foreach (var k in test.ListOfQuestions)
             {
-                InputAndOutput.ShowQuestion(k);
+                ShowQuestion(k);
 
                 Console.WriteLine("___________________________");
 

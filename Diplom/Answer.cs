@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace Diplom
 {
-    class Answer
+    internal class Answer
     {
-        public string TextOfAnswer { get; set; }
+        public string TextOfAnswer { get; }
         public Answer(string text)
         {
-            this.TextOfAnswer = text;
+            TextOfAnswer = text;
         }
-        bool isTrue;
-
     }
 }

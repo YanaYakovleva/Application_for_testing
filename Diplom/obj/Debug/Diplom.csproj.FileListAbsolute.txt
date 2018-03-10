@@ -4,3 +4,9 @@ C:\Users\Mega\Documents\Диплом УЦИТ\Diplom\Diplom\bin\Debug\Diplom.pdb
 C:\Users\Mega\Documents\Диплом УЦИТ\Diplom\Diplom\obj\Debug\Diplom.csprojResolveAssemblyReference.cache
 C:\Users\Mega\Documents\Диплом УЦИТ\Diplom\Diplom\obj\Debug\Diplom.exe
 C:\Users\Mega\Documents\Диплом УЦИТ\Diplom\Diplom\obj\Debug\Diplom.pdb
+C:\Users\Mega\Documents\Диплом УЦИТ\Diplom\Application_for_testing.git\Diplom\bin\Debug\Diplom.exe.config
+C:\Users\Mega\Documents\Диплом УЦИТ\Diplom\Application_for_testing.git\Diplom\bin\Debug\Diplom.exe
+C:\Users\Mega\Documents\Диплом УЦИТ\Diplom\Application_for_testing.git\Diplom\bin\Debug\Diplom.pdb
+C:\Users\Mega\Documents\Диплом УЦИТ\Diplom\Application_for_testing.git\Diplom\obj\Debug\Diplom.csprojResolveAssemblyReference.cache
+C:\Users\Mega\Documents\Диплом УЦИТ\Diplom\Application_for_testing.git\Diplom\obj\Debug\Diplom.exe
+C:\Users\Mega\Documents\Диплом УЦИТ\Diplom\Application_for_testing.git\Diplom\obj\Debug\Diplom.pdb

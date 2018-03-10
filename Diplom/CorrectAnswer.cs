@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Diplom
 {
-    class CorrectAnswer : Answer
+    internal class CorrectAnswer : Answer
     {
         public CorrectAnswer(string text) : base(text) { }
-        bool isTrue = true;
-       
         
     }
 }

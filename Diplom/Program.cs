@@ -11,9 +11,9 @@ namespace Diplom
         static void Main(string[] args)
         {
             Result.ResultOfTest = 0;
-            Test test1 = new Test("First");
+            var test1 = new Test("First");
             Console.WriteLine("Enter your name and surname.");
-            User student1 = new User(Console.ReadLine(), Console.ReadLine());            
+            var student1 = new User(Console.ReadLine(), Console.ReadLine());
             InputAndOutput.ShowTest(test1);
             Console.WriteLine("Результат теста\n" + Result.ResultOfTest);
 
